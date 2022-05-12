@@ -1,9 +1,7 @@
 /*
-Just draw a border round the document.body.
-*/
-document.body.style.border = "5px solid red";
-
-/*
 Open every reference in a new tab.
 */
 var links = document.getElementsByTagName("a");
+for (var i = 0; i < links.length; i++) {
+  links[i].target = "_blank";
+}
