@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "HCI-Lecture-New-Tab",
+    "version": "0.1",
+  
+    "description": "Opens all References from lectures.hci.informatik.uni-wuerzburg.de in a new Tab.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.lectures.hci.informatik.uni-wuerzburg.de/*"],
+        "js": ["newtab.js"]
+      }
+    ]
+  
+  }
