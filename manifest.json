@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "HCI-Lecture-New-Tab",
-    "version": "0.1",
+    "version": "0.2",
   
     "description": "Opens all References from lectures.hci.informatik.uni-wuerzburg.de in a new Tab.",
   
