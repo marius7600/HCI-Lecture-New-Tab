@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "HCI-Lecture-New-Tab",
-    "version": "0.2",
+    "version": "0.3",
   
     "description": "Opens all References from lectures.hci.informatik.uni-wuerzburg.de in a new Tab.",
   
@@ -15,6 +15,12 @@
         "matches": ["*://*.lectures.hci.informatik.uni-wuerzburg.de/*"],
         "js": ["newtab.js"]
       }
-    ]
+    ],
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "HCI-Lecture-New-Tab@roehm.dev"
+      }
+    }
   
   }
