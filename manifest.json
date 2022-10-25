@@ -1,26 +1,24 @@
 {
+  "manifest_version": 2,
+  "name": "HCI-Lecture-New-Tab",
+  "version": "0.4",
 
-    "manifest_version": 2,
-    "name": "HCI-Lecture-New-Tab",
-    "version": "0.3",
-  
-    "description": "Opens all References from lectures.hci.informatik.uni-wuerzburg.de in a new Tab.",
-  
-    "icons": {
-      "48": "icons/border-48.png"
-    },
-  
-    "content_scripts": [
-      {
-        "matches": ["*://*.lectures.hci.informatik.uni-wuerzburg.de/*"],
-        "js": ["newtab.js"]
-      }
-    ],
+  "description": "Opens all References from lectures.hci.informatik.uni-wuerzburg.de in a new Tab.",
 
-    "browser_specific_settings": {
-      "gecko": {
-        "id": "HCI-Lecture-New-Tab@roehm.dev"
-      }
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.lectures.hci.informatik.uni-wuerzburg.de/*"],
+      "js": ["newtab.js"]
     }
-  
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "HCI-Lecture-New-Tab@roehm.dev"
+    }
   }
+}
