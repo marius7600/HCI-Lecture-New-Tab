@@ -11,14 +11,11 @@ wait for site to load
 */
 var interval = setInterval(function () {
   if (document.readyState === "complete") {
-    // open Menue
-    clickByXPath("/html/body/div[1]/div[11]");
-    // disable animations
     clickByXPath("/html/body/div[4]/nav/ol/li[2]");
-    // close Menue
-    clickByXPath('//*[@id="close"]');
+
+    clearInterval(interval);
   }
-}, 4000);
+}, 100);
 
 /*
 Click on Element by XPath
@@ -40,6 +37,6 @@ function clickByXPath(path) {
         element.click();
         clearInterval(interval);
       }
-    }, 2000);
+    }, 100);
   }
 }
